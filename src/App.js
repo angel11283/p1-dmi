@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
         />
       </div>
 
-      <button>Iniciar sesión</button>
+      <button onclick="location.href='./LoggedIn.js'">Iniciar sesión</button>
     </div>
   );
 }
