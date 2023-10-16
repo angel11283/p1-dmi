@@ -7,7 +7,7 @@ function LogIn() {
   const [password, setPassword] = useState('');
   const handleLogin = () => {
     if (username === 'Angel' && password === '11283') {
-      navigate("/Inicio");
+      navigate("/Menu");
     } else {
       alert('Credenciales inválidas');
     }
@@ -22,7 +22,7 @@ function LogIn() {
     const navigate = useNavigate();
     return (
       <div className="container">
-        <div className="header">
+        <div className='header'>
           <h1>LogIn</h1>
         </div>
         <div className="input-container">
