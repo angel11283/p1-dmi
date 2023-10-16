@@ -1,29 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LogIn from "./Login";
+import Inicio from "./Inicio";
 
-function App() {
-  return (
-    <div>
-      <div>
-        <h1>LogIn</h1>
-      </div>
-      <div>
-        <label>Nombre de usuario:</label>
-        <input
-          type="text"
-        />
-      </div>
-
-      <div>
-        <label>Contraseña:</label>
-        <input
-          type="password"
-        />
-      </div>
-
-      <button>Iniciar sesión</button>
-    </div>
+function App(){
+  return(
+  <div>
+  <Router>
+    <Routes>
+      <Route path="/" element={<LogIn/>}/>
+      <Route path="/Inicio" element={<Inicio/>}/>
+    </Routes>
+  </Router>
+</div>
   );
 }
-
 export default App;
