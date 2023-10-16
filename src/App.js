@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LogIn from "./Login";
-import Inicio from "./Inicio";
+import Menu from "./Menu";
 
 function App(){
   return(
@@ -9,7 +9,7 @@ function App(){
   <Router>
     <Routes>
       <Route path="/" element={<LogIn/>}/>
-      <Route path="/Inicio" element={<Inicio/>}/>
+      <Route path="/Menu" element={<Menu/>}/>
     </Routes>
   </Router>
 </div>
