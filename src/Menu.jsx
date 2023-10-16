@@ -21,9 +21,10 @@ const Menu = () => {
             </button>
             <nav className={ `Menu-nav ${ menu ? 'isActive' : '' }` }>
                 <ul className="Menu-ul">
-                    <li className="Menu-li"><a href="/" className="Menu-a">Perfil</a></li>
-                    <li className="Menu-li"><a href="#" className="Menu-a">Configuración</a></li>
-                    <li className="Menu-li"><a href="#" className="Menu-a">Servicios</a></li>
+                    <li className="Menu-li"><a href="/" className="Menu-a">Login</a></li>
+                    <li className="Menu-li"><a href="/Perfil" className="Menu-a">Perfil</a></li>
+                    <li className="Menu-li"><a href="/Configuracion" className="Menu-a">Configuracion</a></li>
+                    <li className="Menu-li"><a href="/Servicios" className="Menu-a">Servicios</a></li>
                 </ul>
             </nav>
         </header>
